@@ -75,7 +75,7 @@
             hudPct.textContent = pad(pct, 3) + '%';
         }
         if (hudBar) {
-            hudBar.style.transform = 'scaleX(' + (pct / 102) + ')';
+            hudBar.style.transform = 'scaleX(' + (pct / 100) + ')';
         }
         if (hudBlock) {
             var blk = clamp(Math.round(ratio * (BLOCKS - 1)), 0, BLOCKS - 1) + 1;
